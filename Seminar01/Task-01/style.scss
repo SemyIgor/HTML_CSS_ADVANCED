@@ -1,0 +1,48 @@
+@use 'extends';
+@import 'variables';
+@import 'mixins';
+
+// @use - более новое использование
+// @import - более старое
+// Применимы оба, но @use должно быть
+// подключено раньше всех других правил
+
+// %fontForLinks {
+//    font-family: sans-serif;
+//    font-style: normal;
+// }
+
+h1 {
+   color: $firstColor;
+   background-color: $bgColor;
+}
+
+.container {
+   max-width: $siteWidth;
+}
+
+// Using variable
+.container__heading_span {
+   color: $firstColor;
+}
+
+.nav {
+   display: flex;
+   gap: $navGap;
+   &__link {
+      text-decoration: none;
+      @extend %fontForLinks;
+   }
+}
+
+.content {
+   @include centralizeBlock();
+   gap: $navGap;
+   &__item {
+      width: ($siteWidth - $navGap * 3) / 4;
+      border: $contentItemBorder;
+      height: 200px;
+      box-sizing: border-box;
+   }
+
+}
