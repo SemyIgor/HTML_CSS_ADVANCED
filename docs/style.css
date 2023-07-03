@@ -40,7 +40,7 @@
   background-color: #f8f3f4;
 }
 .arrivals__left_heading {
-  color: #F16D7F;
+  color: #f16d7f;
   font-size: 24px;
   font-family: Lato;
   font-style: normal;
@@ -56,7 +56,7 @@
   line-height: normal;
 }
 .arrivals__right_heading-span {
-  color: #F16D7F;
+  color: #f16d7f;
   font-weight: bold;
 }
 
@@ -65,9 +65,11 @@
   justify-content: center;
   align-items: center;
   background-color: #f7f7f7;
+  padding-left: calc(50% - 800px);
+  padding-right: calc(50% - 800px);
 }
 .slider__container {
-  width: 1600px;
+  width: 100%;
   padding-bottom: 65px;
   position: relative;
   border: 1px solid #eaeaea;
@@ -242,11 +244,14 @@ h1 {
   padding-bottom: 19px;
   /* position: relative; */
 }
+.header__logo {
+  display: flex;
+  gap: 41px;
+  justify-content: space-between;
+  align-items: center;
+}
 .header__logo img {
   cursor: pointer;
-}
-.header__logo img:first-child {
-  margin-right: 41px;
 }
 .header__shop {
   display: flex;
@@ -266,7 +271,7 @@ h1 {
 }
 .header__shop_cart__counter {
   border-radius: 50%;
-  background-color: #F16D7F;
+  background-color: #f16d7f;
   width: 19px;
   height: 19px;
   display: flex;
@@ -280,13 +285,14 @@ h1 {
   font-weight: 400;
   font-size: 12px;
   line-height: 14px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .header__menu {
   width: 232px;
   height: 634px;
   padding-left: 33px;
   padding-top: 32px;
+  z-index: 100;
   background-color: #fff;
   box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
   position: absolute;
@@ -304,17 +310,17 @@ h1 {
 .header__menu_item {
   list-style: none;
   margin-left: 21px;
-  color: #6F6E6E;
+  color: #6f6e6e;
   font-size: 14px;
   margin-bottom: 11px;
 }
 .header__menu_item a {
-  color: #6F6E6E;
+  color: #6f6e6e;
   font-size: 14px;
 }
 .header__menu_summary {
   display: block;
-  color: #F16D7F;
+  color: #f16d7f;
   font-size: 14px;
   margin-bottom: 12px;
   margin-top: 24px;
@@ -340,7 +346,7 @@ h1 {
 }
 
 .face {
-  background-color: #F1E4E6;
+  background-color: #f1e4e6;
   /* max-width: 1600px; */
   margin: 0 auto;
   padding-left: 16px;
@@ -360,7 +366,7 @@ h1 {
 }
 .face__title {
   padding-left: 16px;
-  border-left: 12px solid #F16D7F;
+  border-left: 12px solid #f16d7f;
   font-style: normal;
   font-weight: 900;
   font-size: 48px;
@@ -369,7 +375,7 @@ h1 {
 }
 .face__subtitle {
   padding-left: 16px;
-  border-left: 12px solid #F16D7F;
+  border-left: 12px solid #f16d7f;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -377,7 +383,7 @@ h1 {
   color: #222222;
 }
 .face__subtitle_span {
-  color: #F16D7F;
+  color: #f16d7f;
 }
 
 .hero {
@@ -404,14 +410,14 @@ h1 {
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .hero__item_header {
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
   line-height: 29px;
-  color: #F16D7F;
+  color: #f16d7f;
 }
 .hero__item-1 {
   background: center/cover url(./img/hero_img-1.png);
@@ -459,7 +465,7 @@ h1 {
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
-  color: #9F9F9F;
+  color: #9f9f9f;
 }
 .goods__cards {
   padding-top: 48px;
@@ -476,7 +482,7 @@ h1 {
 .goods__item {
   display: flex;
   flex-direction: column;
-  background: #F8F8F8;
+  background: #f8f8f8;
   padding-bottom: 20px;
   align-items: center;
   justify-content: center;
@@ -553,7 +559,7 @@ h1 {
   font-weight: 300;
   font-size: 14px;
   line-height: 17px;
-  color: #5D5D5D;
+  color: #5d5d5d;
 }
 .goods__item_price {
   padding-left: 17px;
@@ -561,7 +567,7 @@ h1 {
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
-  color: #F16D7F;
+  color: #f16d7f;
 }
 .goods__button {
   display: flex;
@@ -569,18 +575,18 @@ h1 {
 }
 .goods__button_btn {
   text-align: center;
-  border: #FF6A6A 1px solid;
+  border: #ff6a6a 1px solid;
   padding: 15px 39px;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
-  color: #F26376;
+  color: #f26376;
   cursor: pointer;
 }
 .goods__button_btn:hover {
   animation: wobble-hor-bottom 0.8s both;
-  background-color: #F26376;
+  background-color: #f26376;
   color: #fff;
 }
 
@@ -620,7 +626,7 @@ h1 {
   font-weight: 400;
   font-size: 19.96px;
   line-height: 24px;
-  color: #FBFBFB;
+  color: #fbfbfb;
   margin-bottom: 16px;
 }
 .our-pas__item_text {
@@ -628,7 +634,7 @@ h1 {
   font-weight: 300;
   font-size: 13.972px;
   line-height: 17px;
-  color: #FBFBFB;
+  color: #fbfbfb;
 }
 .our-pas__item_icon {
   margin-bottom: 28px;
@@ -709,7 +715,7 @@ h1 {
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
-  background-color: #E1E1E1;
+  background-color: #e1e1e1;
   padding: 16px 64px 16px 22px;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
@@ -727,8 +733,8 @@ h1 {
   line-height: 17px;
   align-items: center;
   text-align: center;
-  color: #FFFFFF;
-  background: #F16D7F;
+  color: #ffffff;
+  background: #f16d7f;
   padding: 16px 19px 16px 22px;
   border-top-right-radius: 24px;
   border-bottom-right-radius: 24px;
@@ -761,7 +767,7 @@ h1 {
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
-  color: #FBFBFB;
+  color: #fbfbfb;
 }
 
 .footer__icons {
@@ -779,16 +785,16 @@ h1 {
 }
 
 .footer__icon_block:hover {
-  background-color: #F26376;
+  background-color: #f26376;
 }
 
 /* Если скачать в svg без квадрата фона, то исключить */
 .footer__icon_block:hover path:first-child {
-  fill: #F26376;
+  fill: #f26376;
 }
 
 .footer__icon_block:hover path:last-child {
-  fill: #FFFFFF;
+  fill: #ffffff;
 }
 
 /* Медиа-запросы */

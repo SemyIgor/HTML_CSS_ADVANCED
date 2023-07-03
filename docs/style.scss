@@ -11,7 +11,6 @@
  * ----------------------------------------
  */
 @-webkit-keyframes wobble-hor-bottom {
-
    0%,
    100% {
       -webkit-transform: translateX(0%);
@@ -47,7 +46,6 @@
 }
 
 @keyframes wobble-hor-bottom {
-
    0%,
    100% {
       -webkit-transform: translateX(0%);
@@ -82,8 +80,8 @@
    }
 }
 
-@import './scss/product';
-@import './scss/variables';
+@import "./scss/product";
+@import "./scss/variables";
 
 * {
    padding: 0;
@@ -91,7 +89,7 @@
 }
 
 body {
-   font-family: 'Lato', sans-serif;
+   font-family: "Lato", sans-serif;
    font-size: 62.5%;
 }
 
@@ -108,17 +106,17 @@ h1 {
 }
 
 .center {
-   padding-left: calc(50% - 570px);
-   padding-right: calc(50% - 570px);
+   padding-left: calc(50% - $siteContentWidth / 2);
+   padding-right: calc(50% - $siteContentWidth / 2);
 }
 
 /* To be used later */
-/*------------------------------------*/ 
+/*------------------------------------*/
 .out__center {
-   padding-left: calc(50% - 800px);
-   padding-right: calc(50% - 800px);
+   padding-left: calc(50% - $siteWidth / 2);
+   padding-right: calc(50% - $siteWidth / 2);
 }
-/*------------------------------------*/ 
+/*------------------------------------*/
 
 .header {
    background-color: #222222;
@@ -136,10 +134,13 @@ h1 {
       padding-bottom: 19px;
       /* position: relative; */
    }
-   &__logo img {
-      cursor: pointer;
-      &:first-child {
-         margin-right: 41px;
+   &__logo {
+      display: flex;
+      gap: 41px;
+      justify-content: space-between;
+      align-items: center;
+      & img {
+         cursor: pointer;
       }
    }
    &__shop {
@@ -147,7 +148,6 @@ h1 {
       position: relative;
       &_item {
          cursor: pointer;
-         // margin-right: 33px;
          &:not(:last-child) {
             margin-right: 33px;
          }
@@ -159,7 +159,7 @@ h1 {
          display: flex;
          &__counter {
             border-radius: 50%;
-            background-color: #F16D7F;
+            background-color: #f16d7f;
             width: 19px;
             height: 19px;
             display: flex;
@@ -173,7 +173,7 @@ h1 {
             font-weight: 400;
             font-size: 12px;
             line-height: 14px;
-            color: #FFFFFF;
+            color: #ffffff;
          }
       }
    }
@@ -182,13 +182,14 @@ h1 {
       height: 634px;
       padding-left: 33px;
       padding-top: 32px;
+      z-index: 100;
       background-color: #fff;
       box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
       position: absolute;
       top: 54px;
       opacity: 0;
-      right: calc(0px - (50vw - 570px + 285px));
-      transition: all .5s;
+      right: calc(0px - (50vw - $siteContentWidth / 2 + 285px));
+      transition: all 0.5s;
       &_title {
          color: #000;
          font-size: 14px;
@@ -198,23 +199,23 @@ h1 {
       &_item {
          list-style: none;
          margin-left: 21px;
-         color: #6F6E6E;
+         color: #6f6e6e;
          font-size: 14px;
          margin-bottom: 11px;
       }
       &_item a {
-         color: #6F6E6E;
+         color: #6f6e6e;
          font-size: 14px;
       }
       &_summary {
          display: block;
-         color: #F16D7F;
+         color: #f16d7f;
          font-size: 14px;
          margin-bottom: 12px;
          margin-top: 24px;
          cursor: pointer;
          &::before {
-            content: '';
+            content: "";
          }
       }
    }
@@ -229,14 +230,14 @@ h1 {
    visibility: hidden;
 }
 
-#header__menu_switch:checked~.header__menu {
+#header__menu_switch:checked ~ .header__menu {
    opacity: 1;
-   right: calc(0px - (50vw - 570px - 20px));
+   right: calc(0px - (50vw - $siteContentWidth / 2 - 20px));
    top: 54px;
 }
 
 .face {
-   background-color: #F1E4E6;
+   background-color: #f1e4e6;
    /* max-width: 1600px; */
    margin: 0 auto;
    padding-left: 16px;
@@ -255,7 +256,7 @@ h1 {
    }
    &__title {
       padding-left: 16px;
-      border-left: 12px solid #F16D7F;
+      border-left: 12px solid #f16d7f;
       font-style: normal;
       font-weight: 900;
       font-size: 48px;
@@ -264,14 +265,14 @@ h1 {
    }
    &__subtitle {
       padding-left: 16px;
-      border-left: 12px solid #F16D7F;
+      border-left: 12px solid #f16d7f;
       font-style: normal;
       font-weight: 700;
       font-size: 32px;
       line-height: 38px;
       color: #222222;
       &_span {
-         color: #F16D7F;
+         color: #f16d7f;
       }
    }
 }
@@ -298,14 +299,14 @@ h1 {
          font-weight: 400;
          font-size: 16px;
          line-height: 19px;
-         color: #FFFFFF;
+         color: #ffffff;
       }
       &_header {
          font-style: normal;
          font-weight: 700;
          font-size: 24px;
          line-height: 29px;
-         color: #F16D7F;
+         color: #f16d7f;
       }
    }
    &__item-1 {
@@ -354,7 +355,7 @@ h1 {
       font-weight: 400;
       font-size: 14px;
       line-height: 17px;
-      color: #9F9F9F;
+      color: #9f9f9f;
    }
    &__cards {
       padding-top: 48px;
@@ -371,7 +372,7 @@ h1 {
    &__item {
       display: flex;
       flex-direction: column;
-      background: #F8F8F8;
+      background: #f8f8f8;
       padding-bottom: 20px;
       align-items: center;
       justify-content: center;
@@ -393,7 +394,7 @@ h1 {
          color: rgba(255, 255, 255, 0);
          fill: rgba(255, 255, 255, 0);
          stroke: rgba(255, 255, 255, 0);
-         transition-duration: .5s;
+         transition-duration: 0.5s;
       }
       &__button {
          display: flex;
@@ -404,7 +405,7 @@ h1 {
          min-width: 110px;
          cursor: pointer;
          fill: inherit;
-         & svg  {
+         & svg {
             fill: inherit;
             stroke: inherit;
          }
@@ -447,7 +448,7 @@ h1 {
          font-weight: 300;
          font-size: 14px;
          line-height: 17px;
-         color: #5D5D5D;
+         color: #5d5d5d;
       }
       &_price {
          padding-left: 17px;
@@ -455,7 +456,7 @@ h1 {
          font-weight: 400;
          font-size: 16px;
          line-height: 19px;
-         color: #F16D7F;
+         color: #f16d7f;
       }
    }
    &__button {
@@ -463,17 +464,17 @@ h1 {
       justify-content: center;
       &_btn {
          text-align: center;
-         border: #FF6A6A 1px solid;
+         border: #ff6a6a 1px solid;
          padding: 15px 39px;
          font-style: normal;
          font-weight: 400;
          font-size: 16px;
          line-height: 19px;
-         color: #F26376;
+         color: #f26376;
          cursor: pointer;
          &:hover {
             animation: wobble-hor-bottom 0.8s both;
-            background-color: #F26376;
+            background-color: #f26376;
             color: #fff;
          }
       }
@@ -481,12 +482,12 @@ h1 {
 }
 
 .goods__item_img:hover .goods__item_veil {
-   background-color: rgba(58, 56, 56, .86);
+   background-color: rgba(58, 56, 56, 0.86);
    border: rgba(255, 255, 255, 1) 1px solid;
    color: rgba(255, 255, 255, 1);
    fill: rgba(255, 255, 255, 1);
    stroke: rgba(255, 255, 255, 1);
-   transition-duration: .5s;
+   transition-duration: 0.5s;
 }
 
 .our-pas {
@@ -514,7 +515,7 @@ h1 {
          font-weight: 400;
          font-size: 19.96px;
          line-height: 24px;
-         color: #FBFBFB;
+         color: #fbfbfb;
          margin-bottom: 16px;
       }
       &_text {
@@ -522,7 +523,7 @@ h1 {
          font-weight: 300;
          font-size: 13.972px;
          line-height: 17px;
-         color: #FBFBFB;
+         color: #fbfbfb;
       }
       &_icon {
          margin-bottom: 28px;
@@ -605,7 +606,7 @@ h1 {
    font-weight: 400;
    font-size: 14px;
    line-height: 17px;
-   background-color: #E1E1E1;
+   background-color: #e1e1e1;
    padding: 16px 64px 16px 22px;
    border-top-left-radius: 20px;
    border-bottom-left-radius: 20px;
@@ -623,7 +624,7 @@ h1 {
    line-height: 17px;
    align-items: center;
    text-align: center;
-   color: #FFFFFF;
+   color: #ffffff;
    background: $colorMainSite;
    padding: 16px 19px 16px 22px;
    border-top-right-radius: 24px;
@@ -657,7 +658,7 @@ h1 {
    font-weight: 400;
    font-size: 16px;
    line-height: 19px;
-   color: #FBFBFB;
+   color: #fbfbfb;
 }
 
 .footer__icons {
@@ -675,16 +676,16 @@ h1 {
 }
 
 .footer__icon_block:hover {
-   background-color: #F26376;
+   background-color: #f26376;
 }
 
 /* Если скачать в svg без квадрата фона, то исключить */
 .footer__icon_block:hover path:first-child {
-   fill: #F26376;
+   fill: #f26376;
 }
 
 .footer__icon_block:hover path:last-child {
-   fill: #FFFFFF;
+   fill: #ffffff;
 }
 
 /* Медиа-запросы */
@@ -695,8 +696,8 @@ h1 {
    }
 }
 
-@media (max-width: 1140px) {
-   #header__menu_switch:checked~.header__menu {
+@media (max-width: $siteContentWidth) {
+   #header__menu_switch:checked ~ .header__menu {
       opacity: 1;
       right: 0px;
       top: 56px;
@@ -705,7 +706,7 @@ h1 {
    .header__menu {
       opacity: 0;
       right: -285px;
-      transition: all .5s;
+      transition: all 0.5s;
    }
 }
 
@@ -778,7 +779,7 @@ h1 {
       margin-right: 0;
    }
 
-   .header__shop>img {
+   .header__shop > img {
       margin-right: 0px;
    }
 
@@ -786,7 +787,7 @@ h1 {
       margin-right: 0;
    }
 
-   #header__menu_switch:checked~.header__menu {
+   #header__menu_switch:checked ~ .header__menu {
       right: 0;
       top: 60px;
    }
