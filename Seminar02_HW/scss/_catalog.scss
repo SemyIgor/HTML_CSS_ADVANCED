@@ -1,0 +1,46 @@
+.filter {
+   position: absolute;
+   padding: 13px 16px 16px;
+   width: 360px;
+   top: 39px;
+   box-sizing: border-box;
+   z-index: 10;
+   &[open] .filter__heading {
+      color: $colorMainSite;
+   }
+   &[open] path {
+      fill: $colorMainSite;
+   }
+   &[open] {
+      background: #fff;
+      box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+   }
+   &__summary {
+      display: flex; // Убирает треугольник
+      align-items: center;
+      gap: 11px;
+   }
+   &-sort {
+      position: relative;
+      // padding-top: 39px;
+      height: 132px;
+   }
+   &__heading {
+      font-family: Lato;
+      font-style: normal;
+      font-size: 14px;
+      line-height: 17px;
+      line-height: normal;
+      font-weight: 600;
+      color: $colorText;
+   }
+   &__content {
+      padding-top: 16px;
+   }
+   &__item {
+      margin-top: 16px;
+   }
+   &__link {
+      color: #6f6e6e;
+   }
+}
