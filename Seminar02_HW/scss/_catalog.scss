@@ -7,10 +7,7 @@ summary::-webkit-details-marker {
 }
 
 .filter {
-   // position: absolute;
-   // top: 39px;
    position: relative;
-   // padding: 13px 16px 16px;
    padding-top: 13px;
    width: 360px;
    box-sizing: border-box;
@@ -26,7 +23,6 @@ summary::-webkit-details-marker {
       box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
    }
    &__content {
-      // position: absolute;
       background-color: #fff;
       padding-top: 0;
       padding-right: 16px;
@@ -38,6 +34,7 @@ summary::-webkit-details-marker {
       align-items: center;
       gap: 11px;
       padding-left: 16px;
+      cursor: pointer;
    }
    &-sort {
       position: relative;
@@ -91,6 +88,7 @@ summary::-webkit-details-marker {
       line-height: normal;
       font-weight: 600;
       color: $colorText;
+      cursor: pointer;
    }
 }
 
@@ -106,6 +104,7 @@ summary::-webkit-details-marker {
       display: flex;
       align-items: center;
       gap: 10px;
+      cursor: pointer;
    }
    &__heading {
       color: #6f6e6e;
