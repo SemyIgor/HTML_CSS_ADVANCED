@@ -139,6 +139,9 @@
          margin-bottom: 64px;
       }
       &_choosing {
+         display: flex;
+         align-items: center;
+         gap: 23px;
          color: #6f6e6e;
          font-size: 14px;
          font-family: Lato;
@@ -148,19 +151,12 @@
          margin-bottom: 48px;
          cursor: pointer;
          &_item {
-            &:not(:last-child) {
-               display: inline-block;
-               margin-right: 42px;
-               position: relative;
-            }
-            &::after {
-               position: absolute;
+            display: flex;
+            align-items: center;
+            gap: 9px;
+            & img {
                width: 10px;
                height: 5px;
-               margin-left: 9px;
-               margin-top: 6px;
-               content: " ";
-               background: url("../img/product_down_arrow.svg");
             }
          }
       }

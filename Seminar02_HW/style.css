@@ -168,6 +168,9 @@
   margin-bottom: 64px;
 }
 .slideinfo__info_choosing {
+  display: flex;
+  align-items: center;
+  gap: 23px;
   color: #6f6e6e;
   font-size: 14px;
   font-family: Lato;
@@ -177,19 +180,14 @@
   margin-bottom: 48px;
   cursor: pointer;
 }
-.slideinfo__info_choosing_item:not(:last-child) {
-  display: inline-block;
-  margin-right: 42px;
-  position: relative;
+.slideinfo__info_choosing_item {
+  display: flex;
+  align-items: center;
+  gap: 9px;
 }
-.slideinfo__info_choosing_item::after {
-  position: absolute;
+.slideinfo__info_choosing_item img {
   width: 10px;
   height: 5px;
-  margin-left: 9px;
-  margin-top: 6px;
-  content: " ";
-  background: url("../img/product_down_arrow.svg");
 }
 
 summary {
