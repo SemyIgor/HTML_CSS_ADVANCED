@@ -344,7 +344,7 @@ summary::-webkit-details-marker {
 .goods__pagination ul {
   display: flex;
   justify-content: space-between;
-  gap: 10px;
+  gap: 23px;
 }
 .goods__pagination li {
   display: block;
