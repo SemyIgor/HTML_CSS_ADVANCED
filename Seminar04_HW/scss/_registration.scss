@@ -1,0 +1,113 @@
+fieldset {
+   padding: 0;
+   margin: 0;
+}
+
+.hero {
+   &-indents {
+      padding-top: 64px;
+      padding-bottom: 96px;
+   }
+   &__container {
+      display: flex;
+      justify-content: start;
+   }
+}
+
+.forms {
+   @extend %flexColumn;
+   gap: 40px;
+   width: 360px;
+}
+
+.form {
+   &__lastname {
+      margin-bottom: 31px;
+   }
+   &__password {
+      margin-bottom: 15px;
+   }
+   &__btn_registration {
+      margin-top: 0;
+      padding: 16px 29px;
+      border: none;
+      color: #fff;
+      font-size: 14px;
+      font-weight: 400;
+      background-color: #f16d7f;
+
+      transition: background-color 0.3s;
+      &:hover {
+         animation: vibrate-2 0.3s linear infinite both;
+      }
+      & span {
+         margin-right: 20px;
+      }
+   }
+}
+
+.fields {
+   border: none;
+}
+
+.radio {
+   &-field {
+      @extend %flexRowStart;
+      gap: 22px;
+      margin-bottom: 33px;
+   }
+   &-box {
+      @extend %flexRowBetween;
+      gap: 11px;
+   }
+   &-button {
+      width: 17px;
+      height: 17px;
+   }
+}
+
+.sex {
+   color: #000;
+   font-size: 11px;
+   font-weight: 300;
+}
+
+.legend-name {
+   color: #222;
+   font-size: 16px;
+   font-weight: 300;
+   margin-bottom: 20px;
+}
+
+.password-clue {
+   color: #b1b1b1;
+   font-size: 13px;
+   font-weight: 300;
+   margin-bottom: 39px;
+}
+
+.perks {
+   @extend %flexColumn;
+   margin-left: 128px;
+   width: 652px;
+   &__header {
+      margin-bottom: 22px;
+      @extend %perksFont;
+   }
+   &__text {
+      margin-bottom: 21px;
+      @extend %perksFont;
+   }
+   &__list {
+      list-style-type: none;
+   }
+   &__item {
+      @extend %perksFont;
+      & span {
+         margin-right: 23px;
+      }
+   }
+   &__item + &__item {
+      margin-top: 16px;
+   }
+}
