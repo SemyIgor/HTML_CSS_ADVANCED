@@ -385,6 +385,7 @@ summary::-webkit-details-marker {
 }
 .goods__pagination li:hover .goods__pagination_link {
   color: #ef5b70;
+  font-weight: bold;
 }
 .goods__pagination svg {
   width: 9px;

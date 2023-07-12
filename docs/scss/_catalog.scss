@@ -142,6 +142,7 @@ summary::-webkit-details-marker {
       font-weight: 300;
       &:hover .goods__pagination_link {
          color: $colorMainSite;
+         font-weight: bold;
       }
    }
    & svg {
