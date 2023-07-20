@@ -1,0 +1,211 @@
+fieldset {
+   padding: 0;
+   margin: 0;
+}
+
+.hero {
+   &-indents {
+      padding-top: 64px;
+      padding-bottom: 96px;
+   }
+
+   &__container {
+      display: flex;
+      justify-content: start;
+   }
+}
+
+.forms {
+   @extend %flexColumn;
+   gap: 40px;
+   width: 360px;
+}
+
+.form {
+   &__lastname {
+      margin-bottom: 31px;
+   }
+
+   &__password {
+      margin-bottom: 15px;
+   }
+
+   &__btn_registration {
+      margin-top: 0;
+      padding: 17px 28px;
+      border: none;
+      color: #fff;
+      font-size: 14px;
+      font-weight: 400;
+      background-color: #f16d7f;
+
+      transition: background-color 0.3s;
+
+      &:hover {
+         animation: vibrate-2 0.3s linear infinite both;
+      }
+
+      & span {
+         margin-right: 20px;
+      }
+   }
+}
+
+.fields {
+   border: none;
+}
+
+.radio {
+   &-field {
+      @extend %flexRowStart;
+      gap: 22px;
+      margin-bottom: 33px;
+   }
+
+   &-box {
+      @extend %flexRowBetween;
+      gap: 11px;
+   }
+
+   &-button {
+      width: 17px;
+      height: 17px;
+   }
+}
+
+.sex {
+   color: #000;
+   font-size: 11px;
+   font-weight: 300;
+}
+
+.legend-name {
+   color: #222;
+   font-size: 16px;
+   font-weight: 300;
+   margin-bottom: 20px;
+}
+
+.password-clue {
+   color: #b1b1b1;
+   font-size: 13px;
+   font-weight: 300;
+   margin-bottom: 39px;
+}
+
+.perks {
+   @extend %flexColumn;
+   margin-left: 128px;
+   max-width: 652px;
+
+   &__header {
+      margin-bottom: 21px;
+      @extend %perksFont;
+   }
+
+   &__text {
+      margin-bottom: 18px;
+      /* 21px не подходит форме */
+      @extend %perksFont;
+   }
+
+   &__list {
+      list-style-type: none;
+   }
+
+   &__item {
+      @extend %perksFont;
+
+      & span {
+         margin-right: 23px;
+      }
+   }
+
+   &__item+&__item {
+      margin-top: 13px;
+   }
+}
+
+@media (max-width: 1139px) {
+   .hero-indents {
+      padding-top: calc(40px + (64 - 40) * ((100vw - 768px) / (1139 - 768)));
+   }
+
+   .hero__container {
+      justify-content: space-between;
+      gap: 22px;
+   }
+
+   .perks {
+      margin-left: 0;
+   }
+
+   .perks__header,
+   .perks__text,
+   .perks__item {
+      font-size: calc(16px + (24 - 16) * ((100vw - 768px) / (1140 - 768)));
+   }
+
+   .perks__item+.perks__item {
+      margin-top: calc(24px - (24 - 16) * ((100vw - 768px) / (1140 - 768)));
+   }
+
+   .perks__header {
+      margin-bottom: calc(32px - (32 - 22) * ((100vw - 768px) / (1140 - 768)));
+   }
+
+   .perks__text {
+      margin-bottom: 17px;
+      /* 22px не подходит форме */
+      line-height: 1.15;
+   }
+
+   .perks__item {
+      display: flex;
+
+      & svg {
+         margin-bottom: -5px;
+      }
+   }
+}
+
+@media (max-width: 767px) {
+   .heading__content_registration {
+      padding-top: 60px;
+      padding-bottom: 59px;
+   }
+
+   .hero-indents {
+      padding-top: 40px;
+      padding-bottom: 100px;
+   }
+
+   .hero__container {
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
+   }
+
+   .perks {
+      max-width: 360px;
+   }
+
+   .perks__header,
+   .perks__text,
+   .perks__item {
+      font-size: 16px;
+   }
+
+   .perks__header {
+      margin-bottom: 32px;
+   }
+
+   .perks__text {
+      margin-bottom: 22px;
+      line-height: 1.15;
+   }
+
+   .perks__item+.perks__item {
+      margin-top: 16px;
+   }
+}

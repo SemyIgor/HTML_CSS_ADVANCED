@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>The brand</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Roboto&display=swap"
+      rel="stylesheet">
+   <link rel="stylesheet" href="normalize.css">
+   <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+   <div class="outer-shell">
+      <header class="header">
+
+         <div class="header__content center">
+
+            <div class="header__logo">
+               <a href="./index.html">
+                  <img src="./img/logo.png" alt="Logo-icon" class="header__logo_img">
+               </a>
+               <img src="./img/search.svg" alt="Search-icon" class="header__search_img">
+            </div>
+
+            <div class="header__shop">
+
+               <input type="checkbox" id="header__menu_switch">
+               <label for="header__menu_switch"><img src="./img/burger.svg" alt="Burger icon"
+                     class="header__shop_item header__burger header__burger_block"></label>
+               <nav class="header__menu">
+                  <h3 class="header__menu_title">Меню</h3>
+                  <details open>
+                     <summary class="header__menu_summary">HEADER MENU</summary>
+                     <ul>
+                        <li class="header__menu_item">
+                           <a href="./cart.html">Корзина</a>
+                        </li>
+                        <li class="header__menu_item">
+                           <a href="./registration.html">Регистрация</a>
+                        </li>
+                     </ul>
+                  </details>
+
+                  <details open>
+                     <summary class="header__menu_summary">ARRIVALS</summary>
+                     <ul>
+                        <li class="header__menu_item">
+                           <a href="./product.html">New Arriavals</a>
+                        </li>
+                     </ul>
+                  </details>
+
+                  <details open>
+                     <summary class="header__menu_summary">MAN</summary>
+                     <ul>
+                        <li class="header__menu_item"><a href="#">Accessories</a></li>
+                        <li class="header__menu_item"><a href="#">Bags</a></li>
+                        <li class="header__menu_item"><a href="#">Denim</a></li>
+                        <li class="header__menu_item"><a href="#">T-Shirts</a></li>
+                     </ul>
+                  </details>
+
+                  <details open>
+                     <summary class="header__menu_summary">WOMAN</summary>
+                     <ul>
+                        <li class="header__menu_item"><a href="#">Accessories</a></li>
+                        <li class="header__menu_item"><a href="#">Jackets & Coats</a></li>
+                        <li class="header__menu_item"><a href="#">Polos</a></li>
+                        <li class="header__menu_item"><a href="#">T-Shirts</a></li>
+                        <li class="header__menu_item"><a href="#">Shirts</a></li>
+                        <li class="header__menu_item"><a href="#">T-Shirts</a></li>
+                        <!-- <li class="header__menu_item"><a href="./product.html">New Arriavals</a></li> -->
+                     </ul>
+                  </details>
+
+                  <details open>
+                     <summary class="header__menu_summary">KIDS</summary>
+                     <ul>
+                        <li class="header__menu_item"><a href="#">Accessories</a></li>
+                        <li class="header__menu_item"><a href="#">Jackets & Coats</a></li>
+                        <li class="header__menu_item"><a href="#">Polos</a></li>
+                        <li class="header__menu_item"><a href="#">T-Shirts</a></li>
+                        <li class="header__menu_item"><a href="#">Shirts</a></li>
+                        <li class="header__menu_item"><a href="#">Bags</a></li>
+                     </ul>
+                  </details>
+               </nav>
+               <a href="./registration.html"><img src="./img/person_icon.svg" alt="Person icon"
+                     class="header__shop_registration  header__shop_item"></a>
+               <div class="header__shop_item header__shop_cart">
+                  <a href="./cart.html"><img src="./img/cart.svg" alt="Cart icon"></a>
+                  <div class="header__shop_cart__counter">5</div>
+               </div>
+            </div>
+         </div>
+      </header>
+
+      <section class="heading">
+         <div class="heading__content heading__content_cart center">
+
+            <div class="heading__left">
+               <span class="heading__header">SHOPPING CART</span>
+            </div>
+         </div>
+      </section>
+
+      <div class="cart cart-indents">
+         <div class="cart__container center">
+            <section class="cards">
+
+               <article class="card card_cart">
+                  <div class="card_img">
+                     <img src="./img/cart/cart_img-1.png" alt="Image 01">
+                  </div>
+                  <div class="card_info">
+                     <a href="./catalog.html">
+                        <p class="card_goodsname">MANGO PEOPLE <br>T-&nbsp;SHIRT</p>
+                     </a>
+                     <p class="card_goodsprice">
+                        Price: <span class="site_color">$300</span>
+                     <p class="card_goodscolor">Color: Red</p>
+                     <p class="card_goodssize">Size: XI</p>
+                     </p>
+                     <p class="card_goodsquantity">Quantity: <span>2</span></p>
+                     </p>
+                  </div>
+                  <div class="card_close">
+                     <img src="./img/cart/close_icon.svg" alt="Close Icon">
+                  </div>
+               </article>
+
+               <article class="card card_cart">
+                  <div class="card_img">
+                     <img src="./img/cart/cart_img-2.png" alt="Image 02">
+                  </div>
+                  <div class="card_info">
+                     <a href="./catalog.html">
+                        <p class="card_goodsname">MANGO PEOPLE <br>T-&nbsp;SHIRT</p>
+                     </a>
+                     <p class="card_goodsprice">
+                        Price: <span class="site_color">$300</span>
+                     <p class="card_goodscolor">Color: Red</p>
+                     <p class="card_goodssize">Size: XI</p>
+                     </p>
+                     <p class="card_goodsquantity">Quantity: <span>2</span></p>
+                     </p>
+                  </div>
+                  <div class="card_close">
+                     <img src="./img/cart/close_icon.svg" alt="Close Icon">
+                  </div>
+               </article>
+
+               <div class="buttons buttons_cart">
+                  <button class="buttons__btn">CLEAR SHOPPING CART</button>
+                  <button class="buttons__btn">CONTINUE SHOPPING</button>
+               </div>
+
+            </section>
+
+            <section class="checkout">
+               <article class="form form_cart">
+                  <h2 class="form__header">SHIPPING ADRESS</h2>
+                  <form action="#">
+                     <input class="form__country form__textfield" type="text" placeholder="Bangladesh">
+                     <input class="form__state form__textfield" type="text" placeholder="State">
+                     <input class="form__zip form__textfield" type="text" placeholder="Postcode / Zip">
+                     <button type="submit" class="form__btn">GET A QUOTE</button>
+                  </form>
+               </article>
+
+               <article class="proceed proceed_cart">
+                  <div class="proceed_subtotal">SUB TOTAL <span>$900</span></div>
+                  <div class="proceed_grandtotal">GRAND TOTAL <span>$900</span></div>
+                  <svg class="proceed_line" xmlns="http://www.w3.org/2000/svg" width="275" height="1"
+                     viewBox="0 0 275 1" fill="none">
+                     <path d="M275 0H0V1H275V0Z" fill="#E2E2E2" />
+                  </svg>
+                  <button type="submit" class="proceed_btn">PROCEED TO CHECKOUT</button>
+
+                  <!-- <div class="proceed_btn">PROCEED TO CHECKOUT</div> -->
+               </article>
+            </section>
+         </div>
+      </div>
+
+      <section class="subscribe">
+         <div class="subscribe__container center">
+
+            <div class="subscribe__container_authority">
+               <img src="./img/subscribe_authority.png" alt="Authority" class="subscribe__authority_img">
+               <p class="subscribe__authority_text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar
+                  purus condimentum“</p>
+            </div>
+
+            <div class="subscribe__container_form">
+               <h2 class="subscribe__form_header">SUBSCRIBE</h2>
+               <h3 class="subscribe__form_subheader">FOR OUR NEWLETTER AND PROMOTION</h3>
+               <form action="#" class="subscribe__form">
+                  <input type="email" name="email" id="email" class="subscribe__form_email"
+                     placeholder="Enter your email">
+                  <input type="submit" value="Subscribe" class="subscribe__form_btn">
+               </form>
+            </div>
+
+         </div>
+      </section>
+
+      <footer class="footer">
+         <div class="footer__container center">
+            <span class="footer__brand">© 2023 Brand All Rights Reserved.</span>
+            <!-- <div class="footer__social"> -->
+            <nav class="footer__icons">
+               <div class="footer__icon_block">
+                  <a href="#">
+                     <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M31.9259 0H0.475342V32H31.9259V0Z" fill="white" />
+                        <g clip-path="url(#clip0_190_1616)">
+                           <path
+                              d="M16.7402 8.20312C13.5555 8.20312 10.4081 10.3406 10.4081 13.8C10.4081 16 11.6373 17.25 12.3822 17.25C12.6895 17.25 12.8664 16.3875 12.8664 16.1438C12.8664 15.8531 12.1308 15.2344 12.1308 14.025C12.1308 11.5125 14.0304 9.73125 16.4888 9.73125C18.6026 9.73125 20.167 10.9406 20.167 13.1625C20.167 14.8219 19.5058 17.9344 17.3641 17.9344C16.5912 17.9344 15.9301 17.3719 15.9301 16.5656C15.9301 15.3844 16.7495 14.2406 16.7495 13.0219C16.7495 10.9531 13.8349 11.3281 13.8349 13.8281C13.8349 14.3531 13.9001 14.9344 14.1329 15.4125C13.7045 17.2688 12.8292 20.0344 12.8292 21.9469C12.8292 22.5375 12.913 23.1188 12.9689 23.7094C13.0744 23.8281 13.0216 23.8156 13.183 23.7563C14.7474 21.6 14.6916 21.1781 15.3993 18.3562C15.7811 19.0875 16.7681 19.4812 17.5503 19.4812C20.8468 19.4812 22.3274 16.2469 22.3274 13.3313C22.3274 10.2281 19.6641 8.20312 16.7402 8.20312Z"
+                              fill="black" />
+                        </g>
+                        <defs>
+                           <clipPath id="clip0_190_1616">
+                              <rect width="11.9193" height="16" fill="white" transform="translate(10.4081 8)" />
+                           </clipPath>
+                        </defs>
+                     </svg>
+                  </a>
+                  <!-- <img src="./img/social_pinterest_icon.svg" alt="Pinterest icon" class="footer__icon"> -->
+               </div>
+               <div class="footer__icon_block">
+                  <a href="#">
+                     <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M31.6636 0H0.213013V32H31.6636V0Z" fill="white" />
+                        <g clip-path="url(#clip0_190_1612)">
+                           <path
+                              d="M22.4181 12.7411C22.4281 12.8832 22.4281 13.0253 22.4281 13.1675C22.4281 17.5025 19.1509 22.4974 13.161 22.4974C11.3156 22.4974 9.60132 21.9593 8.1593 21.0253C8.42149 21.0558 8.67357 21.0659 8.94585 21.0659C10.4685 21.0659 11.8702 20.5482 12.9895 19.6649C11.5576 19.6345 10.3576 18.6903 9.94415 17.3908C10.1458 17.4213 10.3475 17.4416 10.5593 17.4416C10.8517 17.4416 11.1442 17.4009 11.4164 17.3299C9.92401 17.0253 8.80465 15.7055 8.80465 14.1116V14.071C9.23825 14.3147 9.74249 14.467 10.2769 14.4873C9.39959 13.8984 8.82483 12.8933 8.82483 11.7563C8.82483 11.1472 8.98614 10.5888 9.26851 10.1015C10.8719 12.0913 13.282 13.3908 15.9844 13.5329C15.934 13.2893 15.9038 13.0355 15.9038 12.7817C15.9038 10.9746 17.3559 9.5025 19.1609 9.5025C20.0987 9.5025 20.9457 9.89844 21.5407 10.538C22.2768 10.3959 22.9827 10.1218 23.6079 9.74616C23.3659 10.5076 22.8516 11.1472 22.176 11.5533C22.8315 11.4822 23.4668 11.2994 24.0516 11.0457C23.608 11.6954 23.0533 12.274 22.4181 12.7411Z"
+                              fill="black" />
+                        </g>
+                        <defs>
+                           <clipPath id="clip0_190_1612">
+                              <rect width="15.8924" height="16" fill="white" transform="translate(8.1593 8)" />
+                           </clipPath>
+                        </defs>
+                     </svg>
+                  </a>
+                  <!-- <img src="./img/social_twitter_icon.svg" alt="Twitter icon" class="footer__icon"> -->
+               </div>
+            </nav>
+            <!-- </div> -->
+         </div>
+      </footer>
+   </div>
+
+
+</body>
+
+</html>
